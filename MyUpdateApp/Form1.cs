@@ -88,7 +88,7 @@ namespace MyUpdateApp
             {
             }
             string content = null;
-            content = await httpclient.GetStringAsync("https://raw.githubusercontent.com/LuongCongHan/TestUpdateUngDung/master/CapNhatUngDung/update.json");
+            content = await httpclient.GetStringAsync("https://raw.githubusercontent.com/LuongCongHan/MyAppUpdate/master/MyUpdateApp/update.json");
             //Chuyển đổi Version về dạng dữ liệu đối tượng
             update = JsonConvert.DeserializeObject<UpdateVersion>(content);
             //Lấy thông tin version hiện tại
